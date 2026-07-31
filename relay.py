@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 
 class Handler(BaseHTTPRequestHandler):
-    protocol_version = "HTTP/1.1"
+    protocol_version = "HTTP/1.0"
 
     def _forward(self, method):
         target = "https://api.telegram.org" + self.path
